@@ -25,7 +25,12 @@ export const MuyalogyWelcomeEmail = () => (
     <Body style={main}>
       <Container style={container}>
         <Section style={box}>
-          <Section style={box} bgcolor="#0a9bf1">
+          <Section style={headerSection} bgcolor="#fff">
+            <img
+              src={`https://yt3.googleusercontent.com/ZucYF6S_1cbxW6Mxg7qw1NlUs011gTfDJBPSSCkFupPO1ETiHg00M_Py0VSpdSLloMOZsQjL=s900-c-k-c0x00ffffff-no-rj`}
+              alt="logo"
+              width={100}
+            />
             <Text style={companyname}>Muyalogy</Text>
           </Section>
           <Hr style={hr} />
@@ -44,8 +49,9 @@ export const MuyalogyWelcomeEmail = () => (
             step of the way.
           </Text>
           <Text style={paragraph}>
-            To get started, we recommend that you check out our . These courses
-            are a great way to get a feel for what{" "}
+            To get started, we recommend that you check out our{" "}
+            <Link href={`https://www.muyalogy.com/courses`}>Courses Page</Link>.
+            These courses are a great way to get a feel for what{" "}
             <Link href={`https://www.muyalogy.com`}>Muyalogy</Link> has to
             offer.
           </Text>
@@ -161,8 +167,11 @@ const description = {
   textAlign: "center" as const,
 };
 
+const headerSection = {
+  textAlign: "center" as const,
+};
+
 const col = {
-  float: "center" as const,
   paddingRight: "5px",
   width: "33.33%",
   margin: "0 auto",
@@ -181,7 +190,7 @@ const title = {
 };
 
 const companyname = {
-  color: "#ffffff",
+  color: "#0a9bf1",
   fontSize: "11px",
   fontWeight: 700,
   fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
