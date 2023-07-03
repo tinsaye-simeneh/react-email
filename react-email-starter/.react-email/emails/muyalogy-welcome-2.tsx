@@ -26,12 +26,14 @@ export const MuyalogyWelcomeEmail = () => (
       <Container style={container}>
         <Section style={box}>
           <Section style={headerSection} bgcolor="#fff">
-            <img
-              src={`https://yt3.googleusercontent.com/ZucYF6S_1cbxW6Mxg7qw1NlUs011gTfDJBPSSCkFupPO1ETiHg00M_Py0VSpdSLloMOZsQjL=s900-c-k-c0x00ffffff-no-rj`}
-              alt="logo"
-              width={100}
-            />
-            <Text style={companyname}>Muyalogy</Text>
+            <Link href={`https://www.muyalogy.com`}>
+              <img
+                src={`https://yt3.googleusercontent.com/ZucYF6S_1cbxW6Mxg7qw1NlUs011gTfDJBPSSCkFupPO1ETiHg00M_Py0VSpdSLloMOZsQjL=s900-c-k-c0x00ffffff-no-rj`}
+                alt="logo"
+                width={100}
+              />
+              <Text style={companyname}>Muyalogy</Text>
+            </Link>
           </Section>
           <Hr style={hr} />
           <Text style={paragraph}>
