@@ -25,15 +25,8 @@ export const MuyalogyWelcomeEmail = () => (
     <Body style={main}>
       <Container style={container}>
         <Section style={box}>
-          <Section style={headerSection} bgcolor="#fff">
-            <Link href={`https://www.muyalogy.com`}>
-              <img
-                src={`https://yt3.googleusercontent.com/ZucYF6S_1cbxW6Mxg7qw1NlUs011gTfDJBPSSCkFupPO1ETiHg00M_Py0VSpdSLloMOZsQjL=s900-c-k-c0x00ffffff-no-rj`}
-                alt="logo"
-                width={100}
-              />
-              <Text style={companyname}>Muyalogy</Text>
-            </Link>
+          <Section style={box} bgcolor="#0a9bf1">
+            <Text style={companyname}>Muyalogy</Text>
           </Section>
           <Hr style={hr} />
           <Text style={paragraph}>
@@ -169,10 +162,6 @@ const description = {
   textAlign: "center" as const,
 };
 
-const headerSection = {
-  textAlign: "center" as const,
-};
-
 const col = {
   paddingRight: "5px",
   width: "33.33%",
@@ -192,7 +181,7 @@ const title = {
 };
 
 const companyname = {
-  color: "#0a9bf1",
+  color: "#ffffff",
   fontSize: "11px",
   fontWeight: 700,
   fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",

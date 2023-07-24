@@ -20,82 +20,80 @@ const baseUrl = process.env.VERCEL_URL
 export const MuyalogyWelcomeEmail = () => (
   <Html>
     <Head />
-    <Preview>Welcome to Muyalogy!</Preview>
+    <Preview>Learning a skill is hard. We make it easy.</Preview>
     <Body style={main}>
       <Container style={container}>
         <Section style={box}>
-          <Section style={headerSection} bgcolor="#fff">
-            <Link href={`https://www.muyalogy.com`}>
-              <img
-                src={`https://yt3.googleusercontent.com/ZucYF6S_1cbxW6Mxg7qw1NlUs011gTfDJBPSSCkFupPO1ETiHg00M_Py0VSpdSLloMOZsQjL=s900-c-k-c0x00ffffff-no-rj`}
-                alt="logo"
-                width={100}
-              />
-              <Text style={companyname}>Muyalogy</Text>
-            </Link>
-          </Section>
+          {/* <Img
+            src="https://res.cloudinary.com/muyaglobal/image/upload/v1620050009/muyalogy-logo.png"
+            width="50"
+            height="21"
+            alt="Muyalogy Logo"
+          /> */}
           <Hr style={hr} />
           <Text style={paragraph}>
-            <h1>
-              Hi
-              <span style={{ color: "#0a9bf1" }}> Tinsaye,</span>
-            </h1>
-            Welcome to <Link href={`https://www.muyalogy.com`}>Muyalogy</Link>!
-            We're so excited to have you on board
+            Thanks for choosing to learn with us — we’re excited to be on your
+            journey with you.
           </Text>
           <Text style={paragraph}>
-            We know you're here because you're passionate about learning, and
-            we're here to help you achieve your educational goals. We offer a
-            wide variety of courses, from beginner to advanced, so you can find
-            something that's right for you.{" "}
+            You can view your account related information right from your
+            Muyalogy account.
           </Text>
+          <Button
+            pX={10}
+            pY={10}
+            style={button}
+            href="https://www.muyalogy.com/account/profile"
+          >
+            View your Muyalogy profile
+          </Button>
+          <Hr style={hr} />
           <Text style={paragraph}>
-            We also have a team of experienced{" "}
-            <Link href={`https://www.muyalogy.com/instructor`}>
-              instructors
+            If you haven't finished your integration, you might find our{" "}
+            <Link style={anchor} href="https://stripe.com/docs">
+              docs
             </Link>{" "}
-            who are dedicated to helping you succeed. They're available to
-            answer your questions, provide feedback, and help you stay on track.
+            handy.
           </Text>
           <Text style={paragraph}>
-            We're confident that you'll find{" "}
-            <Link href={`https://www.muyalogy.com`}>Muyalogy</Link> to be a
-            valuable resource for your learning. We're here to help you every
-            step of the way.
-          </Text>
-          <Text style={paragraph}>
-            To get started, we recommend that you check out our . These courses
-            are a great way to get a feel for what{" "}
-            <Link href={`https://www.muyalogy.com`}>Muyalogy</Link> has to
-            offer.
-            <Button
-              pX={10}
-              pY={10}
-              style={button}
-              href="https://www.muyalogy.com/courses"
+            Once you're ready to start accepting payments, you'll just need to
+            use your live{" "}
+            <Link
+              style={anchor}
+              href="https://dashboard.stripe.com/login?redirect=%2Fapikeys"
             >
-              Browse all courses
-            </Button>
-          </Text>
-
-          <Text style={paragraph}>
-            We're excited to see what you accomplish on{" "}
-            <Link href={`https://www.muyalogy.com`}>Muyalogy.</Link> Happy
-            learning!
-          </Text>
-          <Text style={paragraph}>— The Muyalogy team</Text>
-          <Hr style={hr} />
-
-          <Text style={footer}>
-            You received this email because you signed up for Muyalogy. If you
-            don't want to receive these emails in the future, you can{" "}
-            <Link href={`https://www.muyalogy.com/unsubscribe`}>
-              unsubscribe
+              API keys
             </Link>{" "}
+            instead of your test API keys. Your account can simultaneously be
+            used for both test and live requests, so you can continue testing
+            while accepting live payments. Check out our{" "}
+            <Link style={anchor} href="https://stripe.com/docs/dashboard">
+              tutorial about account basics
+            </Link>
+            .
           </Text>
+          <Text style={paragraph}>
+            Finally, we've put together a{" "}
+            <Link
+              style={anchor}
+              href="https://stripe.com/docs/checklist/website"
+            >
+              quick checklist
+            </Link>{" "}
+            to ensure your website conforms to card network standards.
+          </Text>
+          <Text style={paragraph}>
+            We'll be here to help you with any step along the way. You can find
+            answers to most questions and get in touch with us on our{" "}
+            <Link style={anchor} href="https://support.stripe.com/">
+              support site
+            </Link>
+            .
+          </Text>
+          <Text style={paragraph}>— The Stripe team</Text>
+          <Hr style={hr} />
           <Text style={footer}>
-            Muyalogy Digital Services SC. Mambuk Building 7th floor, Gabon St,
-            Addis Ababa
+            Stripe, 354 Oyster Point Blvd, South San Francisco, CA 94080
           </Text>
         </Section>
       </Container>
@@ -118,25 +116,8 @@ const container = {
   marginBottom: "64px",
 };
 
-const companyname = {
-  color: "#0a9bf1",
-  fontSize: "11px",
-  fontWeight: 700,
-  fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
-  height: "16px",
-  letterSpacing: "0",
-  lineHeight: "16px",
-  margin: "16px 8px 8px 8px",
-  textTransform: "uppercase" as const,
-  textAlign: "center" as const,
-};
-
 const box = {
   padding: "0 48px",
-};
-
-const headerSection = {
-  textAlign: "center" as const,
 };
 
 const hr = {
@@ -157,13 +138,12 @@ const anchor = {
 };
 
 const button = {
-  backgroundColor: "#0a9bf1",
+  backgroundColor: "#656ee8",
   borderRadius: "5px",
   color: "#fff",
   fontSize: "16px",
   fontWeight: "bold",
   textDecoration: "none",
-  marginTop: "20px",
   textAlign: "center" as const,
   display: "block",
   width: "100%",
