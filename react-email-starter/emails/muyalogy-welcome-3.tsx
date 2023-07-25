@@ -11,8 +11,28 @@ import {
   Section,
   Text,
   Column,
+  Row,
 } from "@react-email/components";
 import * as React from "react";
+import {
+  Businessplan,
+  World,
+  PhotoEdit,
+  BrandYoutube,
+  HandStop,
+  HomeHand,
+  Speakerphone,
+  Pencil,
+  Movie,
+  Language,
+  AtOff,
+  BrandFacebook,
+  BrandTiktok,
+  BrandTwitter,
+  BrandLinkedin,
+  BrandInertia,
+  BrandInstagram,
+} from "tabler-icons-react";
 
 const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -66,23 +86,290 @@ export const MuyalogyWelcomeEmail = () => (
           <ul>
             <li>
               <Text style={paragraph}>
-                Watch professional courses on demand, from anywhere, at any
+                Watch professionally Produced courses
               </Text>
             </li>
             <li>
-              <Text style={paragraph}>
-                Learn from industry experts who are passionate about teaching
-              </Text>
+              <Text style={paragraph}>Learn from the best professionals</Text>
             </li>
             <li>
-              <Text style={paragraph}>
-                Get access to practice exercises, quizzes and projects
-              </Text>
+              <Text style={paragraph}>Learn with out language barrier</Text>
             </li>
           </ul>
+          <Section
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginTop: "40px",
+            }}
+          >
+            <Button
+              pX={30}
+              pY={10}
+              style={{
+                backgroundColor: "#0a9bf1",
+                borderRadius: "20px",
+                color: "#fff",
+                fontSize: "20px",
+                fontWeight: "bold",
+                textDecoration: "none",
+                margin: "0 auto",
+                textAlign: "center" as const,
+                boxShadow: "0 2px 5px 0 rgb(0 0 0 / 20%)",
+              }}
+              href="https://www.muyalogy.com/register"
+            >
+              Register Now
+            </Button>
+          </Section>
+        </Section>
 
+        <Section
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "60px",
+          }}
+        >
+          <img
+            src={`https://www.muyalogy.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmuyalogy-landing-2.ff422eb7.jpg&w=1920&q=75`}
+            alt="hero"
+            style={{ width: "450px", height: "auto", margin: "0 auto" }}
+          />
+        </Section>
+        <Section
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "60px",
+            marginBottom: "40px",
+          }}
+        >
+          <Text
+            style={{
+              color: "#000000",
+              fontSize: "40px",
+              fontWeight: 400,
+              fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+            }}
+          >
+            Courses
+          </Text>
+        </Section>
+
+        <Section
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Column>
+            <Column style={col}>
+              <World
+                size={30}
+                strokeWidth={2}
+                color={"#0a9bf1"}
+                style={{
+                  margin: "0 auto",
+                  alignItems: "center",
+                }}
+              />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Web Development
+                </Text>
+              </Link>
+            </Column>
+            <Column style={col}>
+              <Businessplan size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Starting a business
+                </Text>
+              </Link>
+            </Column>
+            <Column style={col}>
+              <BrandYoutube size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Tiktok & Youtube mastery
+                </Text>
+              </Link>
+            </Column>
+            <Column style={col}>
+              <Speakerphone size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Digital Marketing
+                </Text>
+              </Link>
+            </Column>
+            <Column style={col}>
+              <HomeHand size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Interior Design
+                </Text>
+              </Link>
+            </Column>
+            <Column style={col}>
+              <Language size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  learn English
+                </Text>
+              </Link>
+            </Column>
+          </Column>
+          <Column>
+            <Column style={col}>
+              <Businessplan size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Entrepreneurship
+                </Text>
+              </Link>
+            </Column>
+            <Column style={col}>
+              <PhotoEdit size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Graphics Design
+                </Text>
+              </Link>
+            </Column>
+            <Column style={col}>
+              <AtOff size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Crochet
+                </Text>
+              </Link>
+            </Column>
+            <Column style={col}>
+              <Movie size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Film Making
+                </Text>
+              </Link>
+            </Column>
+            <Column style={col}>
+              <HandStop size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Nail and lash
+                </Text>
+              </Link>
+            </Column>
+            <Column style={col}>
+              <Pencil size={30} strokeWidth={2} color={"#0a9bf1"} />
+              <Link href="https://www.muyalogy.com/register">
+                <Text
+                  style={{
+                    color: "#000000",
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
+                  }}
+                >
+                  Drawing
+                </Text>
+              </Link>
+            </Column>
+          </Column>
+        </Section>
+        <Section
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "40px",
+          }}
+        >
           <Button
-            pX={10}
+            pX={30}
             pY={10}
             style={{
               backgroundColor: "#0a9bf1",
@@ -92,95 +379,110 @@ export const MuyalogyWelcomeEmail = () => (
               fontWeight: "bold",
               textDecoration: "none",
               margin: "0 auto",
-              display: "inline-block",
-              width: "30%",
+              marginBottom: "40px",
+              textAlign: "center" as const,
+              boxShadow: "0 2px 5px 0 rgb(0 0 0 / 20%)",
             }}
             href="https://www.muyalogy.com/register"
           >
-            Register Now
+            Know More
           </Button>
         </Section>
 
-        <Text style={paragraph}>
-          We're confident that you'll find{" "}
-          <Link href={`https://www.muyalogy.com`}>Muyalogy</Link> to be a
-          valuable resource for your learning. We're here to help you every step
-          of the way.
-        </Text>
-        <Text style={paragraph}>
-          To get started, we recommend that you check out our{" "}
-          <Link href={`https://www.muyalogy.com/courses`}>Courses Page</Link>.
-          These courses are a great way to get a feel for what{" "}
-          <Link href={`https://www.muyalogy.com`}>Muyalogy</Link> has to offer.
-        </Text>
-        <Text style={title}>Get Unlimited access to all popular courses</Text>
-        <Section style={course} bgcolor="#ffffff">
-          <Column style={col}>
-            <img
-              src={`https://www.muyalogy.com/_next/image?url=https%3A%2F%2Fiuenrktegcxhmvoeyhjh.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fcourse-tn%2Fshoot-like-a-pro-photography-starting-from-mobile-to-digital-camera.jpg%3Fv%3D4&w=1920&q=75`}
-              alt="course"
-              width={150}
-              height={100}
-            />
-            <Text style={description}>
-              <Link
-                href={`https://www.muyalogy.com/course/shoot-like-a-pro-photography-starting-from-mobile-to-digital-camera`}
-              >
-                Shoot Like a Pro: Photography Starting from Mobile to Digital
-                Camera
-              </Link>
-            </Text>
-          </Column>
-          <Column style={col}>
-            <img
-              src={`https://www.muyalogy.com/_next/image?url=https%3A%2F%2Fiuenrktegcxhmvoeyhjh.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fcourse-tn%2Fplay-guitar-like-a-rockstar-learn-the-basics-of-playing-guitar.jpg%3Fv%3D4&w=1920&q=75`}
-              alt="course"
-              width={150}
-              height={100}
-            />
-            <Text style={description}>
-              <Link
-                href={`https://www.muyalogy.com/course/play-guitar-like-a-rockstar-learn-the-basics-of-playing-guitars`}
-              >
-                Play Guitar Like a Rockstar: Learn the Basics of Playing Guitar
-              </Link>
-            </Text>
-          </Column>
-          <Column style={col}>
-            <img
-              src={`https://www.muyalogy.com/_next/image?url=https%3A%2F%2Fiuenrktegcxhmvoeyhjh.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fcourse-tn%2Fdevelop-your-first-mobile-app-a-step-by-step-guide-to-mobile-app-development.jpg%3Fv%3D4&w=1920&q=75`}
-              alt="course"
-              width={150}
-              height={100}
-            />
-            <Text style={description}>
-              <Link
-                href={`https://www.muyalogy.com/course/develop-your-first-mobile-app-a-step-by-step-guide-to-mobile-app-development`}
-              >
-                Develop Your First Mobile App: A Step-by-Step Guide to Mobile
-                App Development
-              </Link>
-            </Text>
-          </Column>
+        <Section style={footer}>
+          <Section
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "30px",
+            }}
+          >
+            <Button href="https://www.muyalogy.com/register">
+              <BrandFacebook
+                size={30}
+                strokeWidth={2}
+                color={"#ffffff"}
+                style={{
+                  margin: "0 5px",
+                  padding: "0 5px",
+                }}
+              />
+            </Button>
+            <Button href="https://www.muyalogy.com/register">
+              <BrandTiktok
+                size={30}
+                strokeWidth={2}
+                color={"#ffffff"}
+                style={{
+                  margin: "0 5px",
+                  padding: "0 5px",
+                }}
+              />
+            </Button>
+            <Button href="https://www.muyalogy.com/register">
+              <BrandTwitter
+                size={30}
+                strokeWidth={2}
+                color={"#ffffff"}
+                style={{
+                  margin: "0 5px",
+                  padding: "0 5px",
+                }}
+              />
+            </Button>
+            <Button href="https://www.muyalogy.com/register">
+              <BrandYoutube
+                size={30}
+                strokeWidth={2}
+                color={"#ffffff"}
+                style={{
+                  margin: "0 5px",
+                  padding: "0 5px",
+                }}
+              />
+            </Button>
+            <Button href="https://www.muyalogy.com/register">
+              <BrandLinkedin
+                size={30}
+                strokeWidth={2}
+                color={"#ffffff"}
+                style={{
+                  margin: "0 5px",
+                  padding: "0 5px",
+                }}
+              />
+            </Button>
+            <Button href="https://www.muyalogy.com/register">
+              <BrandInstagram
+                size={30}
+                strokeWidth={2}
+                color={"#ffffff"}
+                style={{
+                  margin: "0 5px",
+                  padding: "0 5px",
+                }}
+              />
+            </Button>
+          </Section>
+          <Hr style={hr} />
+          <Text style={footer}>
+            You received this email because you signed up for Muyalogy. If you
+            don't want to receive these emails in the future, you can{" "}
+            <Link
+              href={`https://www.muyalogy.com/unsubscribe`}
+              style={{
+                color: "#ffffff",
+                textDecoration: "underline",
+              }}
+            >
+              unsubscribe
+            </Link>{" "}
+          </Text>
+          <Text style={footer}>
+            Muyalogy Digital Services SC. Mambuk Building 7th floor, Gabon St,
+            Addis Ababa
+          </Text>
         </Section>
-
-        <Text style={paragraph}>
-          We're excited to see what you accomplish on{" "}
-          <Link href={`https://www.muyalogy.com`}>Muyalogy.</Link> Happy
-          learning!
-        </Text>
-        <Text style={paragraph}>— The Muyalogy team</Text>
-        <Hr style={hr} />
-
-        <Text style={footer}>
-          You received this email because you signed up for Muyalogy. If you
-          don't want to receive these emails in the future, you can{" "}
-          <Link href={`https://www.muyalogy.com/unsubscribe`}>unsubscribe</Link>{" "}
-        </Text>
-        <Text style={footer}>
-          Muyalogy Digital Services SC. Mambuk Building 7th floor, Gabon St,
-          Addis Ababa
-        </Text>
       </Container>
     </Body>
   </Html>
@@ -194,48 +496,21 @@ const main = {
     '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
 };
 
+const col = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "20px",
+  margin: "10px",
+  width: "200px",
+};
+
 const container = {
   backgroundColor: "#ffffff",
   margin: "0 auto",
   padding: "30px",
   marginBottom: "64px",
-};
-
-const description = {
-  color: "#525f7f",
-  fontSize: "14px",
-  fontWeight: 400,
-  fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
-  height: "20px",
-  letterSpacing: "0",
-  lineHeight: "20px",
-  margin: "16px 8px 8px 8px",
-  textAlign: "center" as const,
-};
-
-const col = {
-  paddingRight: "5px",
-  width: "33.33%",
-  margin: "0 auto",
-};
-
-const title = {
-  color: "#0a9bf1",
-  fontSize: "20px",
-  fontWeight: 500,
-  fontFamily: "HelveticaNeue,Helvetica,Arial,sans-serif",
-  height: "24px",
-  alignItems: "left",
-  letterSpacing: "0",
-  margin: "0 0 16px 0",
-};
-
-const course = {
-  margin: "0 auto",
-  alignItems: "center",
-  marginTop: "40px",
-  marginBottom: "80px",
-  width: "100%",
 };
 
 const hr = {
@@ -250,21 +525,12 @@ const paragraph = {
   textAlign: "left" as const,
 };
 
-const button = {
-  backgroundColor: "#0a9bf1",
-  borderRadius: "5px",
-  color: "#fff",
-  fontSize: "16px",
-  fontWeight: "bold",
-  textDecoration: "none",
-  marginTop: "40px",
-  textAlign: "center" as const,
-  display: "block",
-  width: "100%",
-};
-
 const footer = {
-  color: "#8898aa",
+  backgroundColor: "#0a9bf1",
+  color: "#ffffff",
   fontSize: "12px",
   lineHeight: "16px",
+  paddingRight: "20px",
+  paddingLeft: "20px",
+  marginTop: "30px",
 };
